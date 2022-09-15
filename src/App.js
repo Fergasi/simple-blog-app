@@ -4,7 +4,6 @@ import Header from "./Components/Header";
 import Body from "./Components/Body";
 import LoginPage from "./Components/LoginPage";
 import { useState } from "react";
-import Footer from "./Components/Footer";
 
 function App() {
   const [username, setUsername] = useState("");
@@ -17,7 +16,6 @@ function App() {
       {!username && (
         <LoginPage setUsername={setUsername} setImgUrl={setImgUrl} />
       )}
-      <Footer />
     </div>
   );
 }
